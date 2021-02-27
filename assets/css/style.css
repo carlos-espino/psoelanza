@@ -1,0 +1,327 @@
+/*  Front Page  */
+/*  ==========  */
+.path-frontpage #content-before,
+.path-frontpage #block-psoelanza-page-title {
+  display: none;
+}
+
+.path-frontpage .container-fluid {
+  padding: 0px!important;
+}
+
+.path-frontpage #page-content {
+  padding-top: 0px!important; 
+}
+
+/*  Hero banner  */
+/*  ===========  */
+.hero-banner { background: #373f51; padding: 1em; }
+.hero-banner div div img { border-radius: 50%!important; max-width:90%!important; }
+.hero-banner .field--name-body { 
+  color: #fff;
+  font-weight: bolder;
+  font-size: 1em;
+  margin-top: 1em;
+}
+.hero-banner .field--name-body p { margin-bottom: 1em; }
+.hero-banner .field--name-field-media-image { margin:auto; }
+
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+  .hero-banner .field--name-body {
+    font-size: 1.6em;
+  }
+
+}
+
+
+
+
+
+/*  Pressnote  */
+/*  =========  */
+.node--type-pressnote.node--view-mode-full .layout__region--second {
+  padding-left: 1.5em;
+}
+
+.node--type-pressnote.node--view-mode-full .layout__region--second .block {
+  margin-top: 1.5em;
+}
+
+.node--type-pressnote.node--view-mode-full .layout__region--second .views-field-created {
+  font-size: smaller;
+  margin-bottom: 1.4em;
+}
+
+.block-field-blocknodepressnotecreated {
+  margin-top: 1.5em;
+  font-variant-caps: all-small-caps;
+}
+
+.node--type-pressnote.node--view-mode-full .layout__region--first .field--name-body {
+  margin-top: 1.5em;
+}
+
+.node--type-pressnote.node--view-mode-full .layout__region--first .field--name-body br {
+  content: "";
+  display: block;
+  font-size: 100%;
+  height: 0.8em;
+}
+
+
+/*  User blog  */
+/*  =========  */
+
+
+.path-user .block-field-blockuseruseruser-picture {
+  text-align: center;
+  margin-bottom: 1.5em;
+}
+
+.path-user .block-field-blockuseruseruser-picture img {
+  width:75%;
+  height: auto;
+}
+
+.path-user .layout__region--second{
+  padding-left: 1.5em;
+}
+
+.path-user .layout__region--first{
+  padding-right: 1.5em;
+}
+
+
+.path-user .social-link-field.horizontal {
+  text-align:right;
+}
+
+.path-user .social-link-field.horizontal .fa {
+  font-size: 2em;
+  padding-left: 0.2em;
+  color: #373f51;
+}
+
+.path-user .node--type-blog.node--view-mode-teaser {
+  margin-bottom: 3em;
+}
+
+/*  User Post  */
+/*  =========  */
+.page-node-type-blog .field--name-user-picture {
+    text-align: center;
+}
+
+.page-node-type-blog .field--name-user-picture img {
+  max-width: 75%!important;
+  border-radius: 50%!important; 
+  float: none!important;
+}
+
+.page-node-type-blog .views-field-name {
+  margin-bottom: 1.5em ;
+  text-align: center;
+}
+
+.page-node-type-blog .field--name-user-picture .field__label {
+  display: none;
+}
+
+.page-node-type-blog .layout__region--second{
+  padding-left: 1.5em;
+}
+
+.page-node-type-blog .layout__region--first{
+  padding-right: 1.5em;
+}
+
+
+.page-node-type-blog .social-link-field.horizontal .fa {
+  font-size: 2em;
+  padding-left: 0.2em;
+  color: #373f51;
+}
+
+.social-link-field.horizontal {
+  text-align: right;
+}
+
+
+/*  Bloggers en bloque de portada  */
+.view-bloggers.view-display-id-block_1 img {
+  float: none!important;
+  max-width: 50%!important;
+  border-radius: 50%!important;
+}
+
+#views-bootstrap-bloggers-block-1 {
+  text-align: center;
+  margin-top: 2.5em!important;
+}
+
+#views-bootstrap-bloggers-block-1 .views-field-name {
+  font-weight: bolder;
+  font-size: 1.2em;
+}
+
+.main-page-bloggers-block-wrapper {
+  text-align: center;
+  background: ghostwhite;
+}
+
+
+.main-page-bloggers-block-wrapper a {
+  color: #373f51
+}
+
+.block-views-blockbloggers-block-1 {
+  margin-top: 2.5em
+}
+
+
+.main-page-bloggers-block-wrapper h3 {
+  font-size: 1em!important;
+}
+
+
+/*  Notas de prensa en bloque de portada  */
+/*  ====================================  */
+.main-page-pressnotes-block-wrapper {
+  background: #efefef;
+}
+
+.main-page-pressnotes-block {
+  padding: 2.5em 0em;
+}
+
+
+.main-page-pressnotes-block a {
+  color: #373f51 !important;
+}
+
+.main-page-pressnotes-block h2 {
+  padding-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem!important;
+}
+
+.main-page-pressnotes-block h3 {
+  padding-bottom: 1.5em;
+  text-align: left;
+  font-size: 1rem!important;
+}
+
+
+
+/*  Banner Full Width  */
+/*  =================  */
+.banner-full-width{
+  margin-bottom: -4.1em;
+}
+
+.banner-full-width img {  
+  margin-top:  0px!important;
+}
+
+.banner-full-width .field--name-field-texto-del-banner { 
+  font-size: 2em;
+  bottom: 2em;
+  background: #00000070;
+  padding: 0.15em;
+  position: relative;  
+}
+
+.banner-full-width .field--name-field-texto-del-banner p {
+  text-align: center!important;
+  color: #ffffff;
+}
+
+
+/*  Notas de prensa - Listado  */
+.path-notas-de-prensa .views-field-field-imagen img {
+  max-width:100% 
+}
+
+.path-notas-de-prensa .views-field-title a{
+  color:#373f51;
+}
+
+.path-notas-de-prensa .views-field-title {
+  margin-bottom: 2.5em;
+}
+
+
+/*  Notas de prensa en el listado  */
+.view-notas-de-prensa h2 {
+  font-size: 1em;
+}
+
+.view-notas-de-prensa.view-display-id-attachment_1 h2 {
+  font-size: 2em;
+}
+
+.view-notas-de-prensa.view-display-id-attachment_2 h2 {
+  font-size: 1.5em;
+}
+
+.view-notas-de-prensa.view-display-id-attachment_1 img {
+  width: 100%!important;
+  height: auto!important;
+}
+
+
+.view-notas-de-prensa .view-content  img{
+  
+}
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .view-notas-de-prensa #views-bootstrap-notas-de-prensa-page-1  .views-field-field-imagen {
+      float: left;
+      max-width: 35%;
+      padding-right: 0.8em;
+    }
+
+    .view-notas-de-prensa #views-bootstrap-notas-de-prensa-page-1 .views-field-title {
+      float: left;
+      max-width: 65%;
+    }
+
+    .view-notas-de-prensa #views-bootstrap-notas-de-prensa-page-1 .views-field-title h2 {
+      font-size: 0.8em;
+    }
+ 
+}
+
+
+/*  Bloggers page  */
+#views-bootstrap-bloggers-page-1{
+  text-align: center;
+}
+
+#views-bootstrap-bloggers-page-1 img {
+  max-width:90%!important;
+  height: auto!important;
+  border-radius: 50%
+}
+
+#views-bootstrap-bloggers-page-1 .views-field-name {
+  margin-top:1em;
+  margin-bottom: 2.5em;
+}
+
+#views-bootstrap-bloggers-page-1 .views-field-name  a {
+  color:#373f51; 
+}
+
+
+
+
+/*  Corrección Social Medial Links - bloque en main page*/
+#block-socialmedialinks h2 {
+  margin-top: 1.5em!important;
+}
+
+

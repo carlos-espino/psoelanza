@@ -1,0 +1,12 @@
+.carousel-wrapper { background: #000000d1; }
+.carousel-wrapper .container { padding: 2rem 0rem; }
+.carousel-wrapper .carousel { box-shadow: 0 0 15px 0 #444; }
+/*
+.carousel-wrapper .carousel-control-prev { left: -110px; border-bottom: 0; height:80%; }
+.carousel-wrapper .carousel-control-next { right: -110px; border-bottom: 0; height:80%; }
+.carousel-wrapper .carousel-indicators { bottom: -80px; }
+.carousel-wrapper .carousel-indicators li { width: 16px; height: 16px; margin-left: 5px; margin-right: 5px; border-radius: 50%; }
+*/
+
+
+

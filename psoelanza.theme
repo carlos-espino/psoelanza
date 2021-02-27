@@ -1,0 +1,78 @@
+<?php
+use Drupal\Component\Utility\Random;
+use Drupal\Component\Utility\Html;
+
+/**
+ * @file
+ * Functions to support theming in the Bootstrap for Drupal subtheme.
+ */
+
+function psoelanza_theme_suggestions_block_alter(&$suggestions, $variables) {
+  $content = $variables['elements']['content'];
+  if (isset($content['#block_content']) && $content['#block_content'] instanceof \Drupal\block_content\BlockContentInterface) {
+    if($content['#block_content']->bundle() == 'hero_banner'){
+      $suggestions[] = 'block__' . $content['#block_content']->bundle();
+    }
+    if($content['#block_content']->bundle() == 'banner_full_width'){
+      $suggestions[] = 'block__' . $content['#block_content']->bundle();
+    }
+    if($content['#block_content']->bundle() == 'video_carousel'){
+      $suggestions[] = 'block__' . $content['#block_content']->bundle();
+    }
+  }
+}
+
+
+function psoelanza_preprocess_block__video_carousel(&$variables) {
+  $random = new Random();
+  $carousel_id =   Html::getUniqueId( 'carousel-video-'. $random->name(5,true));
+  $settings = [
+    'carousel_id' => $carousel_id,
+  ];
+  $videos = [];
+  $items = $variables['content']['field_video']['#items']->referencedEntities();
+  foreach($items as $item){
+      $videos[] = str_replace('watch?v=', 'embed/', $item->field_media_oembed_video->value);
+  }
+  $variables['videos'] = $videos;
+  $variables['carousel_id'] = $carousel_id;
+  $variables['#attached']['library'][] =  'psoelanza/carousel';
+  $variables['#attached']['drupalSettings']['videoCarousel']['video-carousel'] = $settings; 
+}
+
+//~ function template_preprocess_block(&$variables){
+  //~ dpm($variables);
+//~ }
+
+
+
+
+/* ANULAR ESTOS - ERAN PARA SOLUCIONAR EL ATTACHMENT DE LAS VIEWS*/
+/**
+ * Implements hook_preprocess_page()
+ */
+//~ function psoelanza_preprocess_page(&$vars) {
+  //~ if($_GET['page'])
+  //~ {
+    //~ $vars['get']['page'] = $_GET['page'];
+  //~ }
+  //~ $vars['get']['page'] = 0;
+//~ }
+
+
+
+//~ function psoelanza_theme_registry_alter(&$theme_registry) {
+
+  //~ $theme_registry['views_view']['preprocess functions'][] = 'psoelanza_preprocess_func';
+//~ }
+
+// now go on and play with your new preprocess function
+//~ function psoelanza_preprocess_func(&$vars) {
+
+  //~ if($_GET['page'])
+  //~ {
+    //~ $vars['get']['page'] = $_GET['page'];
+  //~ }
+  //~ $vars['get']['page'] = 0;
+
+//~ }
